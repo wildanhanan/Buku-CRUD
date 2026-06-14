@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background: #fafafa;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;  
+    border: 8px solid #6c5ce7;       
+}
+
+
+
+/* Kolom kiri */
+.login-left {
+    background: linear-gradient(135deg,#f9a826,#ff6bcb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.login-image {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 22px;
+}
+
+/* Kolom kanan (form) */
+.login-right {
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255,255,255,0.12);   /* agak transparan di atas biru */
+}
+
+/* Judul */
+.login-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1466b3;
+    margin-bottom: 6px;
+}
+
+.login-subtitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #5830d1;
+    margin-bottom: 30px;
+}
+
+
+form li {
+    list-style: none;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    color: #1558cb;
+    margin-bottom: 6px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #0a47b1;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #fafafa;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 3px rgba(108,92,231,0.15);
+    background: #fff;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #6c5ce7;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.1s;
+}
+
+form button[type="submit"]:hover {
+    background: #5a4de0;
+    box-shadow: 0 8px 18px rgba(108,92,231,0.35);
+}
+
+form button[type="submit"]:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(108,92,231,0.35);
+}
+
+.login-footer {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+/* Responsif: jadi 1 kolom */
+@media (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .login-left {
+        display: none;
+    }
+
+    .login-right {
+        padding: 40px 30px;
+    }
+}

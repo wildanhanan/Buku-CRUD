@@ -1,0 +1,193 @@
+
+body {
+    background: linear-gradient(120deg, #fafafa 0%, #fcfcfc 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.navbar-custom {
+    background-color: #b81717;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    z-index: 100;
+    position: sticky;  
+    top: 0;            
+    z-index: 1000;
+}
+
+.brand-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-logout {
+    background-color: #ffffff;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+.main-container {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1; 
+    width: 100%;
+}
+
+
+.content-wrapper {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+
+.card-premium {
+    background: #ffffff;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); 
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+
+.card-header-gradient {
+    background: linear-gradient(to right, #b01b1b 0%, #fe0072 100%);
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header-gradient h2 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 24px;
+}
+
+.sub-header {
+    font-size: 14px;
+    opacity: 0.9;
+    font-weight: 300;
+    display: block;
+}
+
+
+.btn-back-fancy {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-back-fancy:hover {
+    background: white;
+    color: #0072ff;
+}
+
+
+.form-body {
+    padding: 40px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #00f2fe;
+    box-shadow: 0 0 0 0.25rem rgba(0, 242, 254, 0.15);
+}
+
+.form-floating label { color: #999; }
+
+
+.upload-zone {
+    border: 2px dashed #dbeafe;
+    background-color: #eff6ff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.upload-zone:hover {
+    background-color: #dbeafe;
+    border-color: #3b82f6;
+    transform: scale(1.01);
+}
+
+.upload-zone input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0; opacity: 0; cursor: pointer;
+}
+
+
+.btn-neon {
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    transition: all 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 242, 254, 0.3);
+}
+
+.btn-neon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(0, 242, 254, 0.5);
+    background: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+}
+
+
+.footer {
+    background-color: #b81717;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; 
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.02);
+}
+
+.footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+}
